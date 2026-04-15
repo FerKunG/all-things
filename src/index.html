@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FerKunG | Portfolio</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Space+Grotesk:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <div id="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-text">INITIALIZING...</div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <nav class="glass-nav" id="navbar">
+        <div class="logo">Fer <span>KunG's</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <p class="cyber-subtitle">ดีจร้าาาาาา เฟอร์เองเน้อ</p>
+            <h1 class="glitch-text" data-text="FerKunG">Fer <span>KunG's</span></h1>
+            <div class="typewriter-container">
+                <span class="tagline">Coder | Gamer | Creator</span>
+            </div>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-neon-cyan">Enter My World</a>
+                <a href="#about" class="btn btn-glass">Boot Sequence</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-header reveal">About <span>Me</span></h2>
+        <div class="about-grid reveal">
+            <div class="about-img-wrapper">
+                <img src="img/avatarHead.png" alt="FerKunG Profile" class="profile-img">
+                <div class="img-glow"></div>
+            </div>
+            <div class="about-text glass-card">
+                <h3>Teen Developer & Tech Enthusiast</h3>
+                <p>What's up! I'm FerKunG. I build digital experiences, craft game plugins, and explore the creative
+                    side of the web. Whether I'm deep into server code or designing sleek user interfaces, I keep things
+                    cool, chill, and highly functional.</p>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <span class="stat-num">2</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-num">0 Kub</span>
+                        <span class="stat-label">Lines of Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-header reveal">My <span>Arsenal</span></h2>
+        <div class="projects-grid">
+            <div class="project-card glass-card reveal">
+                <div class="project-img">
+                    <img src="https://media.discordapp.net/attachments/1253352017896673321/1487426171741147296/image.png?ex=69e0d412&is=69df8292&hm=ff399422e463c444beb95306b542864d96f77cf8f03c19fe9bc84032a99f92f7&=&format=webp&quality=lossless"
+                        alt="Project 1">
+                    <div class="overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Minecraft Server Tool</h3>
+                    <p>ตัวเป็น Server สำหรับจัดการ Minecraft Server ได้ง่ายต่อการเปิดและการใช้งาน </p>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1mwTr80RcqtpI1id9JncgzMNAdyPhcZvB/view?usp=sharing"
+                            class="btn-small"><i class="fas fa-download"></i> Dowloand</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card glass-card reveal">
+                <div class="project-img">
+                    <video autoplay loop muted playsinline class="project-video">
+                        <source src="vdo/Video Project 1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Plugin-UltraTreeFeller</h3>
+                    <p>เป็นปลั๊กอินสำหรับ Minecraft Server ที่ช่วยให้ผู้เล่นสามารถตัดต้นไม้ได้ทั้งต้น</p>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1aXBMs0qK1Bu8RV1-q1QS4VyY-eNrXZIK/view?usp=sharing"
+                            class="btn-small"><i class="fas fa-download"></i> Dowloand</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-header reveal">Initialize <span>Comms</span></h2>
+        <div class="contact-deck reveal">
+            <div class="terminal-card glass-card">
+                <div class="terminal-header">
+                    <div class="window-controls">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">ferkung_os / contact_manager.exe</div>
+                </div>
+                <div class="terminal-content">
+                    <div class="command-line">
+                        <span class="prompt">guest@ferkung:~$</span>
+                        <span class="command">fetch --status</span>
+                    </div>
+                    <div class="response">
+                        <p>> Status: <span class="neon-cyan">AVAILABLE_FOR_CHAT</span></p>
+                        <p>> Location: <span class="neon-purple">THAILAND_ZONE</span></p>
+                    </div>
+                    <div class="command-line" style="margin-top: 20px;">
+                        <span class="prompt">guest@ferkung:~$</span>
+                        <span class="command">connect --all-social</span>
+                    </div>
+
+                    <div class="social-deck">
+                        <a href="https://discord.gg/3pDYYf3vep" class="social-box discord">
+                            <i class="fab fa-discord"></i>
+                            <div class="social-label">
+                                <span class="name">Discord</span>
+                                <span class="id">FerKunG's</span>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/_st0m7" class="social-box instagram">
+                            <i class="fab fa-instagram"></i>
+                            <div class="social-label">
+                                <span class="name">Instagram</span>
+                                <span class="id">@_st0m7</span>
+                            </div>
+                        </a>
+                        <a href="#" class="social-box email">
+                            <i class="fas fa-envelope"></i>
+                            <div class="social-label">
+                                <span class="name">Email</span>
+                                <span class="id">Direct Message</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 FerKunG.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
