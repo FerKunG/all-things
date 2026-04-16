@@ -68,7 +68,7 @@
                         <span class="stat-label">Projects Built</span>
                     </div>
                     <div class="stat-box">
-                        <span class="stat-num">0 Kub</span>
+                        <span class="stat-num" id="total-likes">0</span>
                         <span class="stat-label">Lines of Code</span>
                     </div>
                 </div>
@@ -94,6 +94,9 @@
                             <span class="btn-glitch"></span>
                             <i class="fas fa-download"></i>
                         </a>
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i> <span class="like-count">0</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -109,11 +112,62 @@
                     <h3>Plugin-UltraTreeFeller</h3>
                     <p>เป็นปลั๊กอินสำหรับ Minecraft Server ที่ช่วยให้ผู้เล่นสามารถตัดต้นไม้ได้ทั้งต้น</p>
                     <div class="project-links">
-                        <a href="ultratreefeller-1.0.0.jar" download class="btn-cyber">
+                        <a href="plugin/ultratreefeller-1.0.0.jar" download class="btn-cyber">
                             <span class="btn-text">DOWNLOAD</span>
                             <span class="btn-glitch"></span>
                             <i class="fas fa-download"></i>
                         </a>
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i> <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass-card reveal">
+                <div class="project-img">
+                    <video autoplay loop muted playsinline class="project-video">
+                        <source src="vdo/Video Project 3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Plugin-Stacker</h3>
+                    <p>เป็นปลั๊กอินสำหรับ Minecraft Server ที่ช่วยให้ผู้เล่นสามารถวางบล็อกซ้อนกันได้</p>
+                    <div class="project-links">
+                        <a href="plugin/ferkungstacker-1.0-SNAPSHOT.jar" download class="btn-cyber">
+                            <span class="btn-text">DOWNLOAD</span>
+                            <span class="btn-glitch"></span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i> <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass-card reveal">
+                <div class="project-img">
+                    <video autoplay loop muted playsinline class="project-video">
+                        <source src="vdo/Video Project 4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="overlay"></div>
+                </div>
+                <div class="project-info">
+                    <h3>Plugin-Autorefill</h3>
+                    <p>เป็นปลั๊กอินสำหรับ Minecraft Server ที่ช่วยให้ผู้เล่นสามารถเติมของหรืออาหารได้อัตโนมัติ</p>
+                    <div class="project-links">
+                        <a href="plugin/autorefill-1.0.0.jar" download class="btn-cyber">
+                            <span class="btn-text">DOWNLOAD</span>
+                            <span class="btn-glitch"></span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <button class="like-btn">
+                            <i class="far fa-heart"></i> <span class="like-count">0</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -161,11 +215,11 @@
                                 <span class="id">@_st0m7</span>
                             </div>
                         </a>
-                        <a href="#" class="social-box email">
-                            <i class="fas fa-envelope"></i>
+                        <a href="https://www.youtube.com/@FerKunGsXD" class="social-box email">
+                            <i class="fab fa-youtube"></i>
                             <div class="social-label">
-                                <span class="name">Email</span>
-                                <span class="id">Direct Message</span>
+                                <span class="name">Youtube</span>
+                                <span class="id">FerKunG</span>
                             </div>
                         </a>
                     </div>
@@ -179,7 +233,31 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getDatabase, ref, onValue, runTransaction } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCBbxaDHBtTvSd8t2stc9OJ1kEqWghc_NY",
+            authDomain: "database-like.firebaseapp.com",
+            databaseURL: "https://database-like-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "database-like",
+            storageBucket: "database-like.firebasestorage.app",
+            messagingSenderId: "2770636163",
+            appId: "1:2770636163:web:f1d3d05a77bcf40de2bab6"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        // บรรทัดนี้ห้ามหาย! เพราะ script.js จะมาหยิบจากตรงนี้
+        window.db = db;
+        window.dbFunctions = { ref, onValue, runTransaction };
+        console.log("Firebase Ready!"); // เพิ่มบรรทัดนี้เพื่อเช็คใน Console
+    </script>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>

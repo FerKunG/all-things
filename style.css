@@ -446,6 +446,7 @@ body {
 .project-links {
     display: flex;
     gap: 1rem;
+    justify-content: space-between;
 }
 
 .btn-cyber {
@@ -779,4 +780,62 @@ footer {
 
 .social-box.email i {
     color: var(--neon-cyan);
+}
+
+.like-btn {
+    display: inline-flex !important;
+    /* บังคับให้แสดงผล */
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 10;
+    /* ให้ปุ่มอยู่บนสุด */
+}
+
+/* ถ้าไอคอนหัวใจไม่ขึ้น ให้เช็คว่าได้ใส่ลิงก์ FontAwesome ใน <head> หรือยัง */
+/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> */
+
+.like-btn:hover {
+    border-color: var(--neon-purple);
+    color: var(--neon-purple);
+}
+
+/* สไตล์เมื่อถูกกด (Liked) */
+.like-btn.liked {
+    background: rgba(188, 19, 254, 0.1);
+    border-color: var(--neon-purple);
+    color: var(--neon-purple);
+    text-shadow: 0 0 10px var(--neon-purple);
+    animation: heartBeat 0.4s linear;
+}
+
+.like-btn.liked i {
+    font-weight: 900;
+    /* เปลี่ยนเป็นหัวใจดวงเต็ม */
+}
+
+/* เอฟเฟกต์หัวใจเต้นตอนกด */
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.stat-num {
+    display: block;
+    transition: all 0.2s ease;
+    /* ทำให้เวลาตัวเลขขยายดูนุ่มนวล */
 }
